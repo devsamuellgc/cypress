@@ -31,12 +31,10 @@ describe("App component", () => {
     cy.get("button").contains("count");
   });
 
-  // Quero saber se existe a palavra React em uma tag H1
   it("should have text React on h1", () => {
     cy.get("h1").contains("React");
   });
 
-  // Eu quero saber se o texto para count is 2 muda depois de clicar duas vezes no botão
   it("should change button text after two click to count is 2", () => {
     const button = cy.get("button");
     button.should("have.text", "count is 0");
