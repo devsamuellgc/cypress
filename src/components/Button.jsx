@@ -8,6 +8,7 @@ export function Button({ type, value, onClick, isDisabled, ...rest }) {
 
   return (
     <button
+      type="button"
       disabled={isDisabled}
       onClick={onClick}
       className={`

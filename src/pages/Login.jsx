@@ -14,7 +14,7 @@ export default function Login() {
   }
 
   function handleSubmit() {
-    return navigate("/");
+    return navigate("/dashboard");
   }
 
   return (
